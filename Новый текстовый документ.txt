@@ -1,0 +1,6 @@
+git init
+git add --all
+git commit -m "registration user"
+
+More->Console
+rake db:migrate
