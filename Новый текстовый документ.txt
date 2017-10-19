@@ -1,6 +1,13 @@
 git init
 git add --all
 git commit -m "registration user"
+git push origin master
 
 More->Console
 rake db:migrate
+
+
+http://guides.rubyonrails.org/active_record_validations.html
+2.11 uniqueness
+2.8 numericality
+rails validates email
