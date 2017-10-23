@@ -3,9 +3,9 @@ class User < ApplicationRecord
 	validates :house_number, numericality: { only_integer: true  }	
 	validates :firstname, :lastname, :country, :city, format: { with: /\A[a-zA-Z]+\z/, message: ":only letters!"}
 	validates :email, format: {with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, message: "has invalid email adress"}
-	validates :email, uniqueness: true
-	validates :password, length: {in: 3..6}
+	validates :password, length: {in: 3..12}
 	validates :password, confirmation: true
+	validates :email, uniqueness: true
 	#validates :firstname, :lastname, :email, :password, presence: true
 	#validates :lastname, :email, :password,  uniqueness: true
 	#validates :password, numericality: true
