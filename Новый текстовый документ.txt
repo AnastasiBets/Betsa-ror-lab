@@ -16,3 +16,8 @@ rails validates email
 
 
 db: migrate -> create users
+
+
+Validation -> app/models/user.rb
+
+Messages -> app/views/new.html.erb
