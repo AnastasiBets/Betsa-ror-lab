@@ -1,5 +1,6 @@
 class User < ApplicationRecord
 	validates :firstname, :lastname, :email, :password,:country, :city, :house_number, presence: true
+	validates :house_number, numericality: { only_integer: true  }	
 	#validates :firstname, :lastname, :email, :password, presence: true
 	#validates :lastname, :email, :password,  uniqueness: true
 	#validates :password, numericality: true
