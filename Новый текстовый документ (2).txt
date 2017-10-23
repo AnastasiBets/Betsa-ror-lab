@@ -1,0 +1,8 @@
+bundle install - запускає gems
+
+Web-Browser <--> Controllers (users_conroller.rb) <--> Views (new.html.erb) 
+				^
+				|
+				|
+				^
+			Models (user.rb) <--> DataBase
